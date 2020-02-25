@@ -1,0 +1,11 @@
+$colors: (
+  blue: (
+    base: #1e95ee,
+    xlt: #f0f3fc
+  )
+);
+
+@function color($base, $shade: base) {
+  $color: map-get(map-get($colors, $base), $shade);
+  @return $color;
+}

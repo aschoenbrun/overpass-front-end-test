@@ -1,0 +1,53 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(80px, 1fr));
+  grid-gap: 10px;
+  width: 100%;
+}
+.bg-blue {
+  background-color: color(blue);
+}
+.bg-blue-xlt {
+  background-color: color(blue, xlt);
+}
+.block-1 {
+  grid-column: span 1;
+}
+.block-2 {
+  grid-column: span 2;
+}
+.block-3 {
+  grid-column: span 3;
+}
+.block-4 {
+  grid-column: span 4;
+}
+.block-5 {
+  grid-column: span 5;
+}
+.block-6 {
+  grid-column: span 6;
+}
+.block-7 {
+  grid-column: span 7;
+}
+.block-8 {
+  grid-column: span 8;
+}
+.block-9 {
+  grid-column: span 9;
+}
+.block-10 {
+  grid-column: span 10;
+}
+.block-11 {
+  grid-column: span 11;
+}
+.block-12 {
+  grid-column: span 12;
+}
