@@ -4,24 +4,48 @@ body {
   margin: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(80px, 1fr));
-  grid-gap: 10px;
+.fw-section {
   width: 100%;
 }
 
-.bg {
-  &-blue {
-    background-color: color(blue);
-  }
-  &-blue-xlt {
-    background-color: color(blue, xlt);
+.container {
+  // display: grid;
+  // grid-template-columns: repeat(12, minmax(80px, 1fr));
+  // grid-gap: 10px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@for $i from 1 through 6 {
+  .h#{$i} {
+    @include global-font-ops();
   }
 }
 
-@for $i from 1 through 12 {
-  .block-#{$i} {
-    grid-column: span #{$i};
+p,
+a,
+span {
+  @include global-font-ops();
+  font-weight: 300;
+  font-size: 18px;
+}
+
+a {
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.btn {
+  padding: 8px 25px;
+  border: 2px solid;
+  &.rnd {
+    border-radius: 40px;
+  }
+  &.dk {
+    background-color: color(blue);
+    border-color: white;
   }
 }

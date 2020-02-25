@@ -1,0 +1,13 @@
+@mixin global-font-ops {
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin bg($color) {
+  @if $color == blue {
+    background-color: color(blue);
+  } @else if $color == blue-xlt {
+    background-color: color(blue, xlt);
+  } @else if $color == white {
+    background-color: color(blue, xlt);
+  }
+}

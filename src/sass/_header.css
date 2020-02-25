@@ -1,4 +1,21 @@
-#site-header {
-  padding: 0 100px;
-  height: 100px;
+#site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#site-header #logo {
+  margin: 22px 0;
+}
+#site-header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#site-header nav li {
+  margin-left: 60px;
+}
+#site-header nav a {
+  color: white;
 }

@@ -8,6 +8,7 @@ const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 module.exports = {
   entry: {
     styles: "./src/sass/cust.styles.scss",
+    fonts: "./src/js/fonts.js",
     html: "./src/index.js"
   },
   output: {
@@ -19,6 +20,7 @@ module.exports = {
     jquery: "jQuery"
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(["dist"]),
     new ProgressBarPlugin(),
     new MiniCssExtractPlugin({
