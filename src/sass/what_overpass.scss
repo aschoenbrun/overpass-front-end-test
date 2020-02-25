@@ -1,0 +1,15 @@
+#what-overpass {
+  padding-bottom: 200px;
+  #color-box {
+    background-color: color(blue);
+  }
+  #wave {
+    padding-bottom: 191px;
+    background: {
+      image: url("../images/curve.svg");
+      size: 115%;
+      repeat: no-repeat;
+      position: center bottom;
+    }
+  }
+}
