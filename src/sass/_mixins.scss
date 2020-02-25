@@ -1,13 +1,13 @@
 @mixin global-font-ops {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
-@mixin bg($color) {
-  @if $color == blue {
-    background-color: color(blue);
-  } @else if $color == blue-xlt {
-    background-color: color(blue, xlt);
-  } @else if $color == white {
-    background-color: color(blue, xlt);
-  }
+@mixin pdg-rl($padding-left: 0, $padding-right: 0) {
+  padding-left: #{$padding-left}px;
+  padding-right: #{$padding-right}px;
+}
+
+@mixin txt-sm {
+  font-size: 12px;
 }

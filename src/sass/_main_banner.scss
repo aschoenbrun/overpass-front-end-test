@@ -1,0 +1,50 @@
+#main-banner {
+  background-color: color(blue);
+  padding-top: 40px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include pdg-rl(100, 82);
+  }
+  #banner-text {
+    color: white;
+    max-width: 500px;
+    #discr1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    #discr2 {
+      margin-bottom: 35px;
+    }
+    #form-container {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    form {
+      display: inline-block;
+      margin-bottom: 5px;
+      input {
+        display: inline-block;
+        border-color: white;
+        background-color: color(blue, lt);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        color: white;
+      }
+      button {
+        border-color: white;
+        background-color: white;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        color: color(blue);
+      }
+    }
+    .disclaimer {
+      @include txt-sm;
+      color: color(blue, gs);
+      display: inline-block;
+    }
+  }
+}

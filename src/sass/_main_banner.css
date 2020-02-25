@@ -1,0 +1,8 @@
+#main-banner {
+  background-color: color(blue);
+}
+#main-banner .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

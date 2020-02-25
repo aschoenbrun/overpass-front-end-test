@@ -1,9 +1,10 @@
 #site-header {
-  @include bg(blue);
+  background-color: color(blue);
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include pdg-rl(100, 100);
   }
   #logo {
     margin: 22px 0;
@@ -21,6 +22,7 @@
     }
     a {
       color: white;
+      font-weight: 100;
     }
   }
 }

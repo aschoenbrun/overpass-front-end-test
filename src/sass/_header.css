@@ -1,7 +1,11 @@
+#site-header {
+  background-color: color(blue);
+}
 #site-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 100px;
 }
 #site-header #logo {
   margin: 22px 0;
@@ -18,4 +22,5 @@
 }
 #site-header nav a {
   color: white;
+  font-weight: 100;
 }

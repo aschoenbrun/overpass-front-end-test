@@ -9,15 +9,12 @@ body {
 }
 
 .container {
-  // display: grid;
-  // grid-template-columns: repeat(12, minmax(80px, 1fr));
-  // grid-gap: 10px;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 @for $i from 1 through 6 {
-  .h#{$i} {
+  h#{$i} {
     @include global-font-ops();
   }
 }
@@ -29,23 +26,36 @@ span {
   font-weight: 300;
   font-size: 18px;
 }
+p {
+  line-height: 1.4em;
+}
 
 a {
   &,
   &:hover,
   &:focus {
     text-decoration: none;
+    cursor: pointer;
   }
 }
 
-.btn {
-  padding: 8px 25px;
+.btn,
+.ipt {
+  padding: 10px 25px;
   border: 2px solid;
+  border-radius: 5px;
   &.rnd {
     border-radius: 40px;
   }
   &.dk {
     background-color: color(blue);
     border-color: white;
+    color: white;
   }
+  &.no-bdr {
+    border: none;
+  }
+}
+.btn {
+  cursor: pointer;
 }
