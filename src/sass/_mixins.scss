@@ -3,11 +3,11 @@
   margin: 0;
 }
 
-@mixin pdg-rl($padding-left: 0, $padding-right: 0) {
-  padding-left: #{$padding-left}px;
-  padding-right: #{$padding-right}px;
+@mixin mgn-rl($margin-left: 0, $margin-right: 0) {
+  margin-left: #{$margin-left}px;
+  margin-right: #{$margin-right}px;
 }
 
-@mixin txt-sm {
-  font-size: 12px;
+@mixin shadow {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
 }

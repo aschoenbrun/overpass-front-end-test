@@ -1,7 +1,7 @@
 #main-banner {
   background-color: color(blue);
 }
-#main-banner .container {
+#main-banner .page-mgn {
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,10 +1,10 @@
 #find-agent {
   margin-bottom: 110px;
-  .container {
+  .page-mgn {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    @include pdg-rl(116, 215);
+    @include mgn-rl(116, 186);
   }
   .text-box,
   .media-box {

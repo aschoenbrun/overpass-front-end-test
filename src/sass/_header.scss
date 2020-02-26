@@ -1,10 +1,10 @@
 #site-header {
   background-color: color(blue);
-  .container {
+  .page-mgn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include pdg-rl(100, 100);
+    @include mgn-rl(100, 100);
   }
   #logo {
     margin: 22px 0;

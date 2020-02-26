@@ -1,8 +1,8 @@
 #trusted-by {
   background-color: color(blue);
   padding-bottom: 187.5px;
-  .container {
-    @include pdg-rl(112, 112);
+  .page-mgn {
+    @include mgn-rl(112, 112);
   }
   h2 {
     text-align: center;

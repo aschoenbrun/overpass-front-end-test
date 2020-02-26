@@ -4,7 +4,7 @@
 #what-overpass #color-box {
   background-color: color(blue);
 }
-#what-overpass .container {
+#what-overpass .page-mgn {
   display: flex;
   justify-content: space-between;
 }
