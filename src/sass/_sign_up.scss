@@ -1,0 +1,32 @@
+#sign-up {
+  background-color: color(blue);
+  color: white;
+  padding: 46.5px 0;
+  .page-mgn {
+    @include mgn-rl(198, 0);
+    min-height: 427px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .text-box {
+    width: 445px;
+    text-align: center;
+    h2 {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    p {
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 35px;
+    }
+  }
+  .image-box {
+    position: absolute;
+    right: -300px;
+  }
+}

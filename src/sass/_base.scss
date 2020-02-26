@@ -44,8 +44,9 @@ a {
   padding: 10px 25px;
   border: 2px solid;
   border-radius: 5px;
-  border-color: color(blue);
-  color: color(blue);
+  background-color: colors(blue);
+  border-color: white;
+  color: white;
   text-align: center;
   &.rnd {
     border-radius: 40px;
