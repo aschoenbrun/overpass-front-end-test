@@ -6,9 +6,12 @@
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @include pdg-rl(200, 123.5);
   }
   #text-box {
     color: white;
+    margin-right: 62.5px;
     h2 {
       font-size: 72px;
       font-weight: 100;
