@@ -1,0 +1,58 @@
+.how-to {
+  padding: 105px 0 90px;
+  color: color(blue);
+  .page-mgn {
+    @include mgn-rl(120, 120);
+  }
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+    .text-box {
+      width: 420px;
+      h2 {
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 23px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+  .details {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 70px;
+      align-items: center;
+    }
+    li {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      align-items: center;
+      grid-gap: 3px 10px;
+      h3,
+      p {
+        display: block;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 20px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
+        grid-column: 2;
+      }
+    }
+  }
+}
