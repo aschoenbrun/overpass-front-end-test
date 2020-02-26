@@ -1,0 +1,20 @@
+#find-agent .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#find-agent .text-box,
+#find-agent .media-box {
+  display: flex;
+  flex-direction: column;
+}
+#find-agent .text-box p,
+#find-agent .text-box img,
+#find-agent .text-box h2,
+#find-agent .text-box h3,
+#find-agent .media-box p,
+#find-agent .media-box img,
+#find-agent .media-box h2,
+#find-agent .media-box h3 {
+  display: block;
+}

@@ -1,5 +1,5 @@
 #what-overpass {
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   #color-box {
     background-color: color(blue);
   }
@@ -9,7 +9,7 @@
     align-items: center;
     @include pdg-rl(200, 123.5);
   }
-  #text-box {
+  .text-box {
     color: white;
     margin-right: 62.5px;
     h2 {
@@ -19,7 +19,7 @@
       margin-bottom: 25px;
     }
   }
-  #video-box {
+  .media-box {
     position: relative;
     width: 548.33px;
     display: flex;

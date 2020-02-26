@@ -1,0 +1,50 @@
+#find-agent {
+  margin-bottom: 110px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include pdg-rl(116, 215);
+  }
+  .text-box,
+  .media-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p,
+    img,
+    h2,
+    h3 {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .text-box {
+    width: 445px;
+    margin-bottom: 47px;
+    img {
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 36px;
+      font-weight: 300;
+      color: color(blue);
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    .btn {
+    }
+  }
+  .media-box {
+    h3 {
+      font-size: 18px;
+      color: color(blue);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
