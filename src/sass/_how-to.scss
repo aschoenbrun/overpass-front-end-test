@@ -55,4 +55,16 @@
       }
     }
   }
+  &:nth-child(odd) {
+    background-color: color(blue, xlt);
+    .banner {
+      flex-direction: row-reverse;
+      .text-box {
+        h2,
+        p {
+          text-align: right;
+        }
+      }
+    }
+  }
 }
