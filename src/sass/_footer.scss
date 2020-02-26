@@ -1,7 +1,10 @@
 #sign-up {
   background-color: color(blue);
   color: white;
-  padding: 46.5px 0;
+  padding: 46.5px 0 0;
+  .container {
+    margin-bottom: 46.5px;
+  }
   .page-mgn {
     @include mgn-rl(198, 0);
     min-height: 427px;
@@ -28,5 +31,9 @@
   .image-box {
     position: absolute;
     right: -300px;
+  }
+  #grey-block {
+    background-color: color(grey);
+    height: 240px;
   }
 }
