@@ -33,6 +33,7 @@
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         color: white;
+        text-align: left;
       }
       button {
         border-color: white;
@@ -46,6 +47,13 @@
       font-size: 12px;
       color: color(grey, lt);
       display: inline-block;
+    }
+  }
+  #banner-img {
+    max-width: 642px;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }

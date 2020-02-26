@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    overflow: hidden;
   }
   .text-box {
     width: 445px;
@@ -31,6 +32,11 @@
   .image-box {
     position: absolute;
     right: -300px;
+    max-width: 725.5px;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   #grey-block {
     background-color: color(grey);
