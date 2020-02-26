@@ -3,6 +3,34 @@
   #color-box {
     background-color: color(blue);
   }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #text-box {
+    color: white;
+    h2 {
+      font-size: 72px;
+      font-weight: 100;
+      line-height: 87px;
+      margin-bottom: 25px;
+    }
+  }
+  #video-box {
+    position: relative;
+    width: 548.33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      position: absolute;
+      cursor: pointer;
+      border: none;
+      margin: 0 0 0 19px;
+      padding: 15px 30px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
   #wave {
     padding-bottom: 191px;
     background: {
