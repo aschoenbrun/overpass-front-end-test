@@ -11,15 +11,41 @@
     margin-bottom: 75px;
     .text-box {
       width: 420px;
+      margin-left: 0;
+      margin-right: 35px;
+      @media screen and (min-width: 1250px) {
+        margin-right: 0;
+      }
       h2 {
         font-size: 42px;
         font-weight: 300;
         line-height: 23px;
         margin-bottom: 40px;
+        @media screen and (min-width: 1250px) {
+          font-size: 36px;
+          line-height: 44px;
+        }
       }
       p {
         font-size: 24px;
         line-height: 32px;
+      }
+    }
+    .image-box {
+      background: {
+        repeat: no-repeat;
+        position: center;
+        size: contain;
+      }
+      width: 375px;
+      height: 248px;
+      @media screen and (min-width: 1000px) {
+        width: 425px;
+        height: 282px;
+      }
+      @media screen and (min-width: 1250px) {
+        width: 500px;
+        height: 331px;
       }
     }
   }
@@ -29,13 +55,18 @@
       padding: 0;
       list-style-type: none;
       display: grid;
-      grid-template-columns: repeat(3, auto);
       grid-gap: 70px;
       align-items: center;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: auto;
+      @media screen and (min-width: 1060px) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+      }
     }
     li {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: 30px auto;
       grid-template-rows: auto auto;
       align-items: center;
       grid-gap: 3px 10px;
@@ -60,11 +91,30 @@
     .banner {
       flex-direction: row-reverse;
       .text-box {
+        margin-right: 0;
+        margin-left: 35px;
+        @media screen and (min-width: 1250px) {
+          margin-left: 0;
+        }
         h2,
         p {
           text-align: right;
         }
       }
     }
+  }
+}
+
+.image-box {
+  #launch & {
+    background-image: url("../images/launch.svg");
+  }
+
+  #monitor & {
+    background-image: url("../images/monitor.svg");
+  }
+
+  #pay & {
+    background-image: url("../images/pay.svg");
   }
 }

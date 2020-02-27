@@ -7,10 +7,19 @@
     justify-content: space-between;
     align-items: center;
     @include mgn-rl(100, 82);
+    flex-direction: column-reverse;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      @include mgn-rl(100, 100);
+    }
   }
   #banner-text {
     color: white;
     max-width: 500px;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+    }
     #discr1 {
       font-size: 36px;
       margin-bottom: 10px;

@@ -42,11 +42,11 @@ a {
 .btn,
 .ipt {
   padding: 10px 25px;
-  border: 2px solid;
+  border: 2px solid color(blue);
   border-radius: 5px;
-  background-color: colors(blue);
-  border-color: white;
-  color: white;
+  background-color: white;
+  border-color: color(blue);
+  color: color(blue);
   text-align: center;
   &.rnd {
     border-radius: 40px;
