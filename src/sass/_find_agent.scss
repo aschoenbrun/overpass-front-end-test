@@ -42,9 +42,9 @@
     }
     img {
       margin-bottom: 10px;
-      width: 175px;
-      @media screen and (min-width: 1200px) {
-        width: 252px;
+      width: 252px;
+      @media screen and (min-width: 820px) and (max-width: 1200px) {
+        width: 175px;
       }
     }
     h2 {
@@ -67,9 +67,9 @@
       margin-bottom: 20px;
     }
     img {
-      width: 350px;
-      @media screen and (min-width: 1200px) {
-        width: auto;
+      width: auto;
+      @media screen and (min-width: 820px) and (max-width: 1200px) {
+        width: 350px;
       }
     }
   }

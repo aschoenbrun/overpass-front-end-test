@@ -8,7 +8,6 @@ const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 module.exports = {
   entry: {
     styles: "./src/sass/cust.styles.scss",
-    scripts: "./src/js/custScripts.js",
     fonts: "./src/js/fonts.js",
     html: "./src/index.js"
   },

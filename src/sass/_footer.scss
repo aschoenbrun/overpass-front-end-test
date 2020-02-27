@@ -6,16 +6,26 @@
     margin-bottom: 46.5px;
   }
   .page-mgn {
-    @include mgn-rl(198, 0);
     min-height: 427px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     overflow: hidden;
+    @include mgn-rl(50, 50);
+    flex-direction: column;
+    @media screen and (min-width: 800px) {
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1065px) {
+      @include mgn-rl(198, 0);
+    }
   }
   .text-box {
-    width: 445px;
+    width: 300px;
+    @media screen and (min-width: 920px) {
+      width: 445px;
+    }
     text-align: center;
     h2 {
       font-size: 36px;
@@ -30,9 +40,12 @@
     }
   }
   .image-box {
-    position: absolute;
-    right: -300px;
+    position: relative;
     max-width: 725.5px;
+    @media screen and (min-width: 800px) {
+      position: absolute;
+      right: -300px;
+    }
     img {
       width: 100%;
       height: auto;
