@@ -7,35 +7,58 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include mgn-rl(200, 123.5);
+    @include mgn-rl(100, 50);
+    @media screen and (min-width: 1200px) {
+      @include mgn-rl(200, 123.5);
+    }
   }
   .text-box {
     color: white;
     margin-right: 62.5px;
+    width: 400px;
+    @media screen and (min-width: 1130px) {
+      width: auto;
+    }
     h2 {
-      font-size: 72px;
+      font-size: 40px;
+      line-height: 1.2em;
       font-weight: 100;
-      line-height: 87px;
       margin-bottom: 25px;
+      @media screen and (min-width: 1130px) {
+        font-size: 72px;
+        line-height: 87px;
+      }
     }
   }
   .media-box {
     position: relative;
-    width: 548.33px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 400px;
+    @media screen and (min-width: 1130px) {
+      width: 548px;
+    }
+    img {
+      width: 400px;
+      @media screen and (min-width: 1130px) {
+        width: 548px;
+      }
+    }
     .btn {
       position: absolute;
       cursor: pointer;
       border: none;
-      margin: 0 0 0 19px;
+      margin: 0 0 0 15px;
       padding: 15px 30px;
       @include shadow;
+      @media screen and (min-width: 1130px) {
+        margin: 0 0 0 19px;
+      }
     }
   }
   #wave {
-    padding-bottom: 191px;
+    padding-bottom: 10%;
     background: {
       image: url("../images/curve.svg");
       size: 115%;

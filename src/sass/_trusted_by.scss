@@ -17,15 +17,19 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 75px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
   li {
     min-width: 0;
     min-height: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
     img {
       display: block;
       vertical-align: top;
