@@ -4,10 +4,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include mgn-rl(100, 100);
+    @include mgn-rl(30, 30);
+    @media screen and (min-width: 960px) {
+      @include mgn-rl(100, 100);
+    }
   }
   #logo {
     margin: 22px 0;
+    img {
+      height: 25px;
+      @media screen and (min-width: 380px) {
+        height: initial;
+      }
+    }
   }
   nav {
     ul {

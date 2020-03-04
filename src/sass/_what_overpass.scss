@@ -2,15 +2,20 @@
   padding-bottom: 50px;
   #color-box {
     background-color: color(blue);
+    padding-bottom: 50px;
+    @media screen and (min-width: 380px) {
+      padding-bottom: 0px;
+    }
   }
   .page-mgn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include mgn-rl(100, 100);
     flex-direction: column;
+    @include mgn-rl(50, 50);
     @media screen and (min-width: 930px) {
       flex-direction: row;
+      @include mgn-rl(100, 100);
     }
     @media screen and (min-width: 1200px) {
       @include mgn-rl(100, 50);
@@ -22,9 +27,11 @@
   .text-box {
     color: white;
     margin-right: 0;
-    width: 400px;
     text-align: center;
     margin-bottom: 20px;
+    @media screen and (min-width: 380px) {
+      width: 400px;
+    }
     @media screen and (min-width: 930px) {
       text-align: left;
       margin-right: 62.5px;
@@ -44,13 +51,21 @@
       }
     }
   }
-  .media-box {
+  .image-box {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 400px;
-    margin-right: 45px;
+    width: 315px;
+    margin-right: 10px;
+    @media screen and (min-width: 675px) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: 675px) {
+      width: 400px;
+      margin-right: 45px;
+    }
     @media screen and (min-width: 930px) {
       margin-right: 0;
     }
@@ -58,7 +73,10 @@
       width: 548px;
     }
     img {
-      width: 548px;
+      width: 100%;
+      @media screen and (min-width: 675px) {
+        width: 548px;
+      }
       @media screen and (min-width: 930px) and (max-width: 1130px) {
         width: 400px;
       }
@@ -67,7 +85,10 @@
       position: absolute;
       cursor: pointer;
       border: none;
-      margin: 0 0 0 19px;
+      margin: 0 0 0 13px;
+      @media screen and (min-width: 675px) {
+        margin: 0 0 0 19px;
+      }
       padding: 15px 30px;
       @include shadow;
     }

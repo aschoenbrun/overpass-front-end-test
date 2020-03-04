@@ -2,7 +2,10 @@
   padding: 105px 0 90px;
   color: color(blue);
   .page-mgn {
-    @include mgn-rl(120, 120);
+    @include mgn-rl(30, 30);
+    @media screen and (min-width: 960px) {
+      @include mgn-rl(120, 120);
+    }
   }
   .banner {
     display: flex;
@@ -14,15 +17,25 @@
       flex-direction: row;
     }
     .text-box {
-      width: 420px;
       margin-left: 0;
-      margin-right: 35px;
       margin-bottom: 30px;
+      width: 100%;
+      @media screen and (min-width: 380px) {
+        width: 420px;
+        margin-right: 35px;
+      }
       @media screen and (min-width: 920px) {
         margin-bottom: 0;
       }
       @media screen and (min-width: 1250px) {
         margin-right: 0;
+      }
+      h2,
+      p {
+        text-align: center;
+        @media screen and (min-width: 380px) {
+          text-align: left;
+        }
       }
       h2 {
         font-size: 42px;
@@ -47,8 +60,12 @@
         position: center;
         size: contain;
       }
-      width: 375px;
-      height: 248px;
+      width: 100%;
+      height: auto;
+      @media screen and (min-width: 380px) {
+        width: 375px;
+        height: 248px;
+      }
       @media screen and (min-width: 1000px) {
         width: 425px;
         height: 282px;
@@ -56,6 +73,12 @@
       @media screen and (min-width: 1250px) {
         width: 500px;
         height: 331px;
+      }
+      img {
+        width: 150%;
+        @media screen and (min-width: 380px) {
+          width: 100%;
+        }
       }
     }
   }

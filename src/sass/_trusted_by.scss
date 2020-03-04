@@ -1,8 +1,14 @@
 #trusted-by {
   background-color: color(blue);
-  padding-bottom: 187.5px;
+  padding-bottom: 75px;
+  @media screen and (min-width: 380px) {
+    padding-bottom: 187.5px;
+  }
   .page-mgn {
-    @include mgn-rl(112, 112);
+    @include mgn-rl(30, 30);
+    @media screen and (min-width: 960px) {
+      @include mgn-rl(112, 112);
+    }
   }
   h2 {
     text-align: center;
@@ -25,8 +31,7 @@
   li {
     min-width: 0;
     min-height: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 0 15px 30px;
     &:last-child {
       margin-right: 0;
     }
